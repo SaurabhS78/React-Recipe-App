@@ -1,14 +1,13 @@
 import React from "react";
-import { render } from "react-dom";
 import { Col, Row, Container } from "react-bootstrap";
+import GitHubIcon from "@material-ui/icons/GitHub";
 
 const Header = () => {
   return (
-    <Container fluid>
+    <Container className="header">
       <Row>
-        <Col>My Title</Col>
-        <Col></Col>
-        <Col></Col>
+        <Col className="logo pl-0">Plato</Col>
+        <GitHubIcon className="logo" />
       </Row>
     </Container>
   );

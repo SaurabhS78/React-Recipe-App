@@ -1,1 +1,119 @@
 @import "~bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&family=Nunito:wght@600&family=Open+Sans:wght@400;600&display=swap");
+@import "variables";
+
+body {
+  background-color: $bg;
+  font-family: "Nunito", sans-serif;
+}
+
+.header {
+  margin-top: 2.25rem;
+  max-width: 59.375rem;
+}
+
+.logo {
+  font-family: "Marck Script", cursive;
+  font-size: 2rem;
+  color: $blue-dark;
+  line-height: 4.6875rem;
+  svg {
+    fill: $blue-dark;
+    margin: auto 0;
+  }
+}
+
+.search {
+  max-width: 59.375rem;
+  height: 2.5rem;
+  margin: 2.25rem auto;
+  button {
+    background-color: $pink;
+    border: none;
+  }
+  button:hover,
+  button:active,
+  button:focus {
+    background-color: darken($color: $pink, $amount: 10);
+  }
+}
+
+.banner {
+  width: fit-content;
+  img {
+    height: 18.75rem;
+    width: 59.375rem;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+}
+
+.foodcard {
+  width: 18.75rem;
+  min-width: 18.75rem;
+  max-width: 18.75rem;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+  transition: ease 0.3s;
+}
+.foodcard:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+}
+
+.time {
+  font-size: 0.75rem;
+  padding: 4px 6px;
+  border-radius: 20px;
+  background-color: $pink;
+  width: fit-content;
+  color: $white;
+  position: absolute;
+  right: -16px;
+  top: 8px;
+}
+
+.title {
+  font-size: 1rem;
+  color: $blue-dark;
+}
+
+.cal {
+  font-size: 0.75rem;
+  color: $blue-light;
+}
+
+.serving {
+  font-size: 0.875rem;
+  color: $blue-light;
+}
+
+.list {
+  max-width: 59.375rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.loader {
+  z-index: 100 !important;
+  color: $white;
+}
+
+.ta-end {
+  text-align: end;
+}
+
+.greeting {
+  width: 59.375rem;
+  position: absolute;
+  bottom: 0;
+  color: $white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.toast {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  color: $blue-dark !important;
+}

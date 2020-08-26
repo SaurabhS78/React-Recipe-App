@@ -14,7 +14,7 @@ const Body = () => {
   const [isLoading, setLoading] = useState(false);
   const [keyword, setKeyword] = useState("");
   const [data, setData] = useState([]);
-  const [toast, setToast] = useState(true);
+  const [toast, setToast] = useState(false);
 
   const url = `https://api.edamam.com/search?q=${keyword}&app_id=${APP_ID}&app_key=${APP_KEY}&from=0&to=20`;
   async function request() {

@@ -5,9 +5,14 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 const Header = () => {
   return (
     <Container className="header">
-      <Row>
+      <Row className="header-row">
         <Col className="logo pl-0">Plato</Col>
-        <GitHubIcon className="logo" />
+        <a
+          href="https://github.com/SaurabhS78/react-recipe-app"
+          target="_blank"
+        >
+          <GitHubIcon className="logo" />
+        </a>
       </Row>
     </Container>
   );

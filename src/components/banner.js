@@ -5,9 +5,9 @@ const Banner = () => {
   var d = new Date();
   var n = d.getHours();
 
-  const greeting = n < 12 ? "Morning" : n < 18 ? "Afternoon" : "Evening";
+  const greeting = n < 12 ? "Morning" : n < 16 ? "Afternoon" : "Evening";
   const meal =
-    n < 12 ? "Breakfast" : n < 18 ? "Lunch" : n < 20 ? "Snacks" : "Dinner";
+    n < 12 ? "Breakfast" : n < 16 ? "Lunch" : n < 20 ? "Snack" : "Dinner";
 
   return (
     <Container className="banner position-relative">
